@@ -10,6 +10,8 @@ namespace KID
     /// 4. 最大數量 int 
     /// 5. 間隔時間 float 
     /// 6. 生成位置
+    /// 7. 武器預製物
+    /// 8. 飛行方向
     /// </summary>
     // ScriptableObject 腳本化物件
     // 作用：將腳本的資料變成物件儲存於 Project 內 (擴充與維護性佳)
@@ -34,5 +36,9 @@ namespace KID
         // 作用：儲存多筆相同類型的資料
         [Header("生成位置")]
         public Vector3[] v3SpawnPoint;
+        [Header("武器預製物")]
+        public GameObject goWeapon;
+        [Header("飛行方向")]
+        public Vector3 v3Direction;
     }
 }

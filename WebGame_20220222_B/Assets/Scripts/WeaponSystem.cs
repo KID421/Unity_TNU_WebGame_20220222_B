@@ -63,7 +63,13 @@ namespace KID
 
             if (timer >= dataWeapon.interval)
             {
-                print("生成武器");
+                // print("生成武器");
+                // 座標
+                Vector3 pos = transform.position + dataWeapon.v3SpawnPoint[0];
+                // Quaternion 四位元：紀錄角度資訊類型
+                // Quaternion.identity 零度角（0，0，0）
+                // 生成（物件，座標，角度）
+                Instantiate(dataWeapon.goWeapon, pos, Quaternion.identity);
                 timer = 0;
             }
         }
