@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e442189422ae6dd4d829d51c8c78643e, type: 3}
   m_Name: "\u60E1\u9B54"
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   attack: 10
   cd: 3.5
-  hp: 100
+  hp: 150
   expDropProbability: 0.8
   typeExp: 0
+  stopDistance: 1

@@ -20,6 +20,8 @@ namespace KID
         public float expDropProbability = 0.8f;
         [Header("掉落經驗值類型")]
         public TypeExp typeExp;
+        [Header("停止距離"), Range(0, 10)]
+        public float stopDistance = 1.5f;
     }
 
     // enum 列舉：下拉式選單
