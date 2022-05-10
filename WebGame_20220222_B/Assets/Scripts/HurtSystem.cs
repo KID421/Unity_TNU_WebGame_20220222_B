@@ -15,12 +15,15 @@ namespace KID
         [SerializeField, Header("血量"), Range(0, 10000)]
         protected float hp = 50;
 
+        // virtual 虛擬：允許子類別使用 override 覆寫此成員
         /// <summary>
         /// 受到傷害
         /// </summary>
         /// <param name="damage">收到的傷害值</param>
-        public void GetHurt(float damage)
+        public virtual void GetHurt(float damage)
         {
+            if (hp <= 0) return;
+
             hp -= damage;
             print("<color=#887700>受到傷害：" + damage + "</color>");
 
@@ -30,7 +33,7 @@ namespace KID
         /// <summary>
         /// 死亡
         /// </summary>
-        private void Dead()
+        protected virtual void Dead()
         {
             hp = 0;
             print("<color=#887700>角色死亡：" + gameObject + "</color>");
