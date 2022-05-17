@@ -172,3 +172,4 @@ MonoBehaviour:
   hp: 50
   data: {fileID: 11400000, guid: 133c7c06c7c888e4a961e64c9acd8e59, type: 2}
   goCanvasHurt: {fileID: 5863619604571574502, guid: b9a4580b6c5fe624ebdcd8c194ab12f8, type: 3}
+  goExp: {fileID: 6995203251651932850, guid: 924892029c1d60e449fcee977c253eb8, type: 3}
